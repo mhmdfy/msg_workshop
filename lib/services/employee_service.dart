@@ -18,7 +18,8 @@ abstract class EmployeeService {
       });
       return result;
     } else {
-      return [];
+      // return [];
+      throw Exception("Error loading data ${response.statusCode}");
     }
   }
 }
